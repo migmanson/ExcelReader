@@ -218,8 +218,7 @@ namespace ExcelReaderExample
             }
         }
 
-        //class to find a string in an excel file which has several sheets and display the location by sheet, row and column
-        static Tuple<float, string> FindStringInExcel(string searchValue, string filePath)
+       static Tuple<float, string> FindStringInExcel(string searchValue, string filePath)
         {
             ExcelPackage package = new ExcelPackage(new FileInfo(filePath));
             bool found = false;
